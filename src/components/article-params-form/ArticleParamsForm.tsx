@@ -21,13 +21,12 @@ import {
 import { useState, useRef, useEffect } from 'react';
 
 type ArticleParamsFormProps = {
-	style: ArticleStateType;
 	setStyle: (style: ArticleStateType) => void; // описание свойства
 };
 
-export const ArticleParamsForm = ({ style, setStyle } : ArticleParamsFormProps) => { 
+export const ArticleParamsForm = ({ setStyle } : ArticleParamsFormProps) => { 
 	const [isOpen, setIsOpen] = useState(false);
-	const [currentStyle, setCurrentStyle] = useState(style);
+	const [currentStyle, setCurrentStyle] = useState(defaultArticleState);
 
 	const form = useRef<HTMLFormElement>(null);
 

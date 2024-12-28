@@ -27,7 +27,7 @@ const App = () => {
 					'--bg-color': style.backgroundColor.value,
 				} as CSSProperties
 			}>
-			<ArticleParamsForm style={style} setStyle={setStyle}/> 
+			<ArticleParamsForm setStyle={setStyle}/> 
 			<Article />
 		</main>
 	);
